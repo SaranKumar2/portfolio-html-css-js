@@ -30,6 +30,8 @@
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>
+
+    
    
     <nav id="desktop-nav">
       <div class="logo">Tony Saran</div>
@@ -41,7 +43,30 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
+      <div class="right-col">
+        <p>Click on him to listen --> </p>
+        <img src="assets/weeknd.jpeg" id="icon">
+      </div>
     </nav>
+    
+    <audio id="mysong">
+      <source  src="assets/music.mp3" type="audio/mp3">
+    </audio>
+    
+    <script>
+      var mysong = document.getElementById("mysong");
+      var icon = document.getElementById("icon");
+    
+      icon.onclick = function() {
+        if (mysong.paused) {
+          mysong.play();
+          icon.src = "assets/weeknd.jpeg";
+        } else {
+          mysong.pause();
+          icon.src = "assets/weeknd.jpeg";
+        }
+      }
+    </script>
     <nav id="hamburger-nav">
       <div class="logo">Tony Saran</div>
       <div class="hamburger-menu">
@@ -60,7 +85,7 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="/assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="assets/profile-pic.png" alt="Tony saran profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -79,21 +104,21 @@
         </div>
         <div id="socials-container">
           <img
-            src="/assets/linkedin.png"
+            src="assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
             onclick="window.open('https://www.linkedin.com/in/saran-kumar-m-0874b3234/', '_blank');"
 
           />
           <img
-            src="/assets/github.png"
+            src="assets/github.png"
             alt="My Github profile"
             class="icon"
             onclick="window.open('https://github.com/SaranKumar2', '_blank');"
 
           />
           <img
-            src="/assets/insta.png"
+            src="assets/insta.png"
             alt="My Insta profile"
             class="icon"
             onclick="window.open('https://www.instagram.com/tony_saran_jr', '_blank');"
@@ -108,7 +133,7 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="/assets/about-pic.png"
+            src="assets/about-pic.png"
             alt="Profile picture"
             class="about-pic"
           />
@@ -117,7 +142,7 @@
           <div class="about-containers">
             <div class="details-container">
               <img
-                src="/assets/experience.png"
+                src="assets/experience.png"
                 alt="Experience icon"
                 class="icon"
               />
@@ -127,7 +152,7 @@
             </div>
             <div class="details-container">
               <img
-                src="/assets/education.png"
+                src="assets/education.png"
                 alt="Education icon"
                 class="icon"
               />
